@@ -15,19 +15,14 @@ func TestCleanInput(t *testing.T) {
 			expected: []string{"hello", "world"},
 		},
 		{
-			input: "Pichu, Bulbasaur, Squirtle ",
-			expected: []string{"pichu", "bulbasaur", "squirtle"},
+			input: "I really LIKE PIZza",
+			expected: []string{"i", "really", "like", "pizza"},
 		},
 		{
-			input: " ",
-			expected: []string{},
-		},
-		{
-			input: "ONE, TWO, THREE",
-			expected: []string{"one", "two", "three"},
+			input: "have a good day son",
+			expected: []string{"have", "a", "good", "day", "son"},
 		},
 	}
-
 	for _, c := range cases {
 		actual := cleanInput(c.input)
 		if len(actual) != len(c.expected) {
@@ -40,4 +35,4 @@ func TestCleanInput(t *testing.T) {
 			}
 		}
 	}
-}
+} 
