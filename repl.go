@@ -20,10 +20,15 @@ func startREPL(cfg *config) {
 			continue
 		}
 		commandName := input[0]
+
+		args := []string{}
+		if len(input) > 1 {
+			args = input[1:]
+		}
 		
 		command, exists := getCommands()[commandName]
 		if exists {
-			err := command.callback(cfg)
+			err := command.callback(cfg, args...)
 			if err != nil {
 				fmt.Println("err")
 			}
