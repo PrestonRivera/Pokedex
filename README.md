@@ -1,23 +1,19 @@
 # POKEDEX API PROJECT
 
-- Ideas for Extending the Project
+I built a REPL pokedex on the command line in Go. This is my first project learning how to make network requests, use JSON and implement caching.
 
-Update the CLI to support the "up" arrow to cycle through previous commands
+## Installation
 
-Simulate battles between pokemon
+### Clone the project
 
-Add more unit tests
+- `git clone https://github.com/PrestonRivera/Pokedex.git`
 
-Refactor your code to organize it better and make it more testable
+### Run Pokedex
 
-Keep pokemon in a "party" and allow them to level up
+- `go run .`
 
-Allow for pokemon that are caught to evolve after a set amount of time
+### Use help command to list available commands and their usage
 
-Persist a user's Pokedex to disk so they can save progress between sessions
+- `help`
 
-Use the PokeAPI to make exploration more interesting. For example, rather than typing the names of areas, maybe you are given choices of areas and just type "left" or "right"
-
-Random encounters with wild pokemon
-
-Adding support for different types of balls (Pokeballs, Great Balls, Ultra Balls, etc), which have different chances of catching pokemon
+# Have Fun and catch them all!!!
